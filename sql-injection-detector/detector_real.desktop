@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=5.0
+Type=Application
+Name=sql-injection-detector
+Comment=SQL Injection Detector
+Exec=/home/binom/sql-injection-detector/bin/detector_real
+Icon=security-high
+Terminal=true
+StartupNotify=false
+Categories=Security;Utility;
+Path=/home/binom/sql-injection-detector

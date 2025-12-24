@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  sqli-detector:
+    build: .
+    container_name: sqli-detector-v5
+    privileged: true
+    environment:
+      - DISPLAY=:99
+      - QT_QPA_PLATFORM=offscreen
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ./bin:/app/bin
+    ports:
+      - "6080:6080"
+      - "5900:5900"  
+      - "5432:5432"  
+    stdin_open: true
+    tty: true
+    shm_size: 2gb
+
+  postgres:
+    image: postgres:16
+    container_name: sqli-postgres
+    environment:
+      POSTGRES_DB: sqli_detector
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5432"  # Хост
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

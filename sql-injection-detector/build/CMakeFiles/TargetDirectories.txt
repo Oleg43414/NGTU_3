@@ -1,0 +1,9 @@
+/home/binom/sql-injection-detector/build/CMakeFiles/detector_real.dir
+/home/binom/sql-injection-detector/build/CMakeFiles/edit_cache.dir
+/home/binom/sql-injection-detector/build/CMakeFiles/rebuild_cache.dir
+/home/binom/sql-injection-detector/build/CMakeFiles/list_install_components.dir
+/home/binom/sql-injection-detector/build/CMakeFiles/install.dir
+/home/binom/sql-injection-detector/build/CMakeFiles/install/local.dir
+/home/binom/sql-injection-detector/build/CMakeFiles/install/strip.dir
+/home/binom/sql-injection-detector/build/CMakeFiles/detector_real_autogen_timestamp_deps.dir
+/home/binom/sql-injection-detector/build/CMakeFiles/detector_real_autogen.dir
